@@ -1,0 +1,299 @@
+> $exception
+{Android.Views.InflateException: Binary XML file line #1: Error inflating class android.support.v7.widget.Toolbar ---> Java.Lang.Reflect.InvocationTargetException: Exception of type 'Java.Lang.Reflect.InvocationTargetException' was thrown. ---> Java.Lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat
+
+  --- End of managed exception stack trace ---
+  java.lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat
+  				  at android.support.v7.widget.AppCompatDrawableManager$VdcInflateDelegate.createFromXmlInner(AppCompatDrawableManager.java:829)
+				     at android.support.v7.widget.AppCompatDrawableManager.loadDrawableFromDelegates(AppCompatDrawableManager.java:303)
+				     	at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:178)
+					   at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:173)
+					      at android.support.v7.widget.TintTypedArray.getDrawable(TintTypedArray.java:60)
+					      	 at android.support.v7.widget.Toolbar.<init>(Toolbar.java:254)
+						    at android.support.v7.widget.Toolbar.<init>(Toolbar.java:196)
+						       at java.lang.reflect.Constructor.constructNative(Native Method)
+						       	  at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+							     at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+							     	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+								   at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+								      at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+								      	 at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+									    at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+									       at android.support.v7.app.AppCompatDelegateImplV7.setContentView(AppCompatDelegateImplV7.java:267)
+									       	  at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:129)
+										     at md58620cbe705876c416ba361abcc6977ae.MainActivity.n_onCreate(Native Method)
+										     	at md58620cbe705876c416ba361abcc6977ae.MainActivity.onCreate(MainActivity.java:28)
+											   at android.app.Activity.performCreate(Activity.java:5231)
+											      at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+											      	 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)
+												    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)
+												       at android.app.ActivityThread.access$800(ActivityThread.java:135)
+												       	  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)
+													     at android.os.Handler.dispatchMessage(Handler.java:102)
+													     	at android.os.Looper.loop(Looper.java:136)
+														   at android.app.ActivityThread.main(ActivityThread.java:5017)
+														      at java.lang.reflect.Method.invokeNative(Native Method)
+														      	 at java.lang.reflect.Method.invoke(Method.java:515)
+															    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+															       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+															       	  at dalvik.system.NativeStart.main(Native Method)
+
+  --- End of inner exception stack trace ---
+
+  --- End of managed exception stack trace ---
+  java.lang.reflect.InvocationTargetException
+	at java.lang.reflect.Constructor.constructNative(Native Method)
+	   at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	      at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+	      	 at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+		    at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+		       at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+		       	  at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+			     at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+			     	at android.support.v7.app.AppCompatDelegateImplV7.setContentView(AppCompatDelegateImplV7.java:267)
+				   at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:129)
+				      at md58620cbe705876c416ba361abcc6977ae.MainActivity.n_onCreate(Native Method)
+				      	 at md58620cbe705876c416ba361abcc6977ae.MainActivity.onCreate(MainActivity.java:28)
+					    at android.app.Activity.performCreate(Activity.java:5231)
+					       at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+					       	  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)
+						     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)
+						     	at android.app.ActivityThread.access$800(ActivityThread.java:135)
+							   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)
+							      at android.os.Handler.dispatchMessage(Handler.java:102)
+							      	 at android.os.Looper.loop(Looper.java:136)
+								    at android.app.ActivityThread.main(ActivityThread.java:5017)
+								       at java.lang.reflect.Method.invokeNative(Native Method)
+								       	  at java.lang.reflect.Method.invoke(Method.java:515)
+									     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+									     	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+										   at dalvik.system.NativeStart.main(Native Method)
+										   Caused by: java.lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat
+										   	  at android.support.v7.widget.AppCompatDrawableManager$VdcInflateDelegate.createFromXmlInner(AppCompatDrawableManager.java:829)
+											     at android.support.v7.widget.AppCompatDrawableManager.loadDrawableFromDelegates(AppCompatDrawableManager.java:303)
+											     	at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:178)
+												   at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:173)
+												      at android.support.v7.widget.TintTypedArray.getDrawable(TintTypedArray.java:60)
+												      	 at android.support.v7.widget.Toolbar.<init>(Toolbar.java:254)
+													    at android.support.v7.widget.Toolbar.<init>(Toolbar.java:196)
+													       ... 26 more
+
+  --- End of inner exception stack trace ---
+    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in /Users/builder/data/lanes/2970/46c3f7e0/source/mono/external/referencesource/mscorlib/system/runtime/exceptionservices/exceptionservicescommon.cs:143
+      at Android.Runtime.JNIEnv.CallNonvirtualVoidMethod (IntPtr jobject, IntPtr jclass, IntPtr jmethod, Android.Runtime.JValue* parms) [0x00084] in /Users/builder/data/lanes/2970/46c3f7e0/source/monodroid/src/Mono.Android/src/Runtime/JNIEnv.g.cs:1029
+        at Android.App.Activity.SetContentView (Int32 layoutResID) [0x00070] in /Users/builder/data/lanes/2970/46c3f7e0/source/monodroid/src/Mono.Android/platforms/android-23/src/generated/Android.App.Activity.cs:5872
+	  at MissingVectorDrawableCompat.MainActivity.OnCreate (Android.OS.Bundle savedInstanceState) [0x0000e] in /Users/josh/Projects/MissingVectorDrawableCompat/MissingVectorDrawableCompat/MainActivity.cs:20
+	    at Android.Support.V4.App.FragmentActivity.n_OnCreate_Landroid_os_Bundle_ (IntPtr jnienv, IntPtr native__this, IntPtr native_savedInstanceState) [0x00011] in <filename unknown>:0
+	      at (wrapper dynamic-method) System.Object:54f0bf2b-fc66-425b-b7a1-98b65270579e (intptr,intptr,intptr)
+	        --- End of managed exception stack trace ---
+		android.view.InflateException: Binary XML file line #1: Error inflating class android.support.v7.widget.Toolbar
+					       at android.view.LayoutInflater.createView(LayoutInflater.java:620)
+					       	  at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+						     at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+						     	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+							   at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+							      at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+							      	 at android.support.v7.app.AppCompatDelegateImplV7.setContentView(AppCompatDelegateImplV7.java:267)
+								    at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:129)
+								       at md58620cbe705876c416ba361abcc6977ae.MainActivity.n_onCreate(Native Method)
+								       	  at md58620cbe705876c416ba361abcc6977ae.MainActivity.onCreate(MainActivity.java:28)
+									     at android.app.Activity.performCreate(Activity.java:5231)
+									     	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+										   at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)
+										      at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)
+										      	 at android.app.ActivityThread.access$800(ActivityThread.java:135)
+											    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)
+											       at android.os.Handler.dispatchMessage(Handler.java:102)
+											       	  at android.os.Looper.loop(Looper.java:136)
+												     at android.app.ActivityThread.main(ActivityThread.java:5017)
+												     	at java.lang.reflect.Method.invokeNative(Native Method)
+													   at java.lang.reflect.Method.invoke(Method.java:515)
+													      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+													      	 at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+														    at dalvik.system.NativeStart.main(Native Method)
+														    Caused by: java.lang.reflect.InvocationTargetException
+														    	   at java.lang.reflect.Constructor.constructNative(Native Method)
+															      at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+															      	 at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+																    ... 23 more
+																    Caused by: java.lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat
+																    	   at android.support.v7.widget.AppCompatDrawableManager$VdcInflateDelegate.createFromXmlInner(AppCompatDrawableManager.java:829)
+																	      at android.support.v7.widget.AppCompatDrawableManager.loadDrawableFromDelegates(AppCompatDrawableManager.java:303)
+																	      	 at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:178)
+																		    at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:173)
+																		       at android.support.v7.widget.TintTypedArray.getDrawable(TintTypedArray.java:60)
+																		       	  at android.support.v7.widget.Toolbar.<init>(Toolbar.java:254)
+																			     at android.support.v7.widget.Toolbar.<init>(Toolbar.java:196)
+																			     	... 26 more
+																				}
+																					Cause: {Java.Lang.Reflect.InvocationTargetException: Exception of type 'Java.Lang.Reflect.InvocationTargetException' was thrown. ---> Java.Lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat
+
+  --- End of managed exception stack trace ---
+  java.lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat
+  				  at android.support.v7.widget.AppCompatDrawableManager$VdcInflateDelegate.createFromXmlInner(AppCompatDrawableManager.java:829)
+				     at android.support.v7.widget.AppCompatDrawableManager.loadDrawableFromDelegates(AppCompatDrawableManager.java:303)
+				     	at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:178)
+					   at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:173)
+					      at android.support.v7.widget.TintTypedArray.getDrawable(TintTypedArray.java:60)
+					      	 at android.support.v7.widget.Toolbar.<init>(Toolbar.java:254)
+						    at android.support.v7.widget.Toolbar.<init>(Toolbar.java:196)
+						       at java.lang.reflect.Constructor.constructNative(Native Method)
+						       	  at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+							     at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+							     	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+								   at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+								      at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+								      	 at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+									    at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+									       at android.support.v7.app.AppCompatDelegateImplV7.setContentView(AppCompatDelegateImplV7.java:267)
+									       	  at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:129)
+										     at md58620cbe705876c416ba361abcc6977ae.MainActivity.n_onCreate(Native Method)
+										     	at md58620cbe705876c416ba361abcc6977ae.MainActivity.onCreate(MainActivity.java:28)
+											   at android.app.Activity.performCreate(Activity.java:5231)
+											      at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+											      	 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)
+												    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)
+												       at android.app.ActivityThread.access$800(ActivityThread.java:135)
+												       	  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)
+													     at android.os.Handler.dispatchMessage(Handler.java:102)
+													     	at android.os.Looper.loop(Looper.java:136)
+														   at android.app.ActivityThread.main(ActivityThread.java:5017)
+														      at java.lang.reflect.Method.invokeNative(Native Method)
+														      	 at java.lang.reflect.Method.invoke(Method.java:515)
+															    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+															       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+															       	  at dalvik.system.NativeStart.main(Native Method)
+
+  --- End of inner exception stack trace ---
+
+  --- End of managed exception stack trace ---
+  java.lang.reflect.InvocationTargetException
+	at java.lang.reflect.Constructor.constructNative(Native Method)
+	   at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	      at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+	      	 at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+		    at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+		       at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+		       	  at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+			     at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+			     	at android.support.v7.app.AppCompatDelegateImplV7.setContentView(AppCompatDelegateImplV7.java:267)
+				   at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:129)
+				      at md58620cbe705876c416ba361abcc6977ae.MainActivity.n_onCreate(Native Method)
+				      	 at md58620cbe705876c416ba361abcc6977ae.MainActivity.onCreate(MainActivity.java:28)
+					    at android.app.Activity.performCreate(Activity.java:5231)
+					       at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+					       	  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)
+						     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)
+						     	at android.app.ActivityThread.access$800(ActivityThread.java:135)
+							   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)
+							      at android.os.Handler.dispatchMessage(Handler.java:102)
+							      	 at android.os.Looper.loop(Looper.java:136)
+								    at android.app.ActivityThread.main(ActivityThread.java:5017)
+								       at java.lang.reflect.Method.invokeNative(Native Method)
+								       	  at java.lang.reflect.Method.invoke(Method.java:515)
+									     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+									     	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+										   at dalvik.system.NativeStart.main(Native Method)
+										   Caused by: java.lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat
+										   	  at android.support.v7.widget.AppCompatDrawableManager$VdcInflateDelegate.createFromXmlInner(AppCompatDrawableManager.java:829)
+											     at android.support.v7.widget.AppCompatDrawableManager.loadDrawableFromDelegates(AppCompatDrawableManager.java:303)
+											     	at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:178)
+												   at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:173)
+												      at android.support.v7.widget.TintTypedArray.getDrawable(TintTypedArray.java:60)
+												      	 at android.support.v7.widget.Toolbar.<init>(Toolbar.java:254)
+													    at android.support.v7.widget.Toolbar.<init>(Toolbar.java:196)
+													       ... 26 more
+													       }
+														Static members:
+														       Non-public members:
+														        	  Class: {class android.view.InflateException}
+																   	 Data: Count = 0
+																	       HResult: -2146233088
+																	        	Handle: 0x1d20042a
+																			 	HelpLink: (null)
+																				 	  InnerException: {Java.Lang.Reflect.InvocationTargetException: Exception of type 'Java.Lang.Reflect.InvocationTargetException' was thrown. ---> Java.Lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat
+
+  --- End of managed exception stack trace ---
+  java.lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat
+  				  at android.support.v7.widget.AppCompatDrawableManager$VdcInflateDelegate.createFromXmlInner(AppCompatDrawableManager.java:829)
+				     at android.support.v7.widget.AppCompatDrawableManager.loadDrawableFromDelegates(AppCompatDrawableManager.java:303)
+				     	at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:178)
+					   at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:173)
+					      at android.support.v7.widget.TintTypedArray.getDrawable(TintTypedArray.java:60)
+					      	 at android.support.v7.widget.Toolbar.<init>(Toolbar.java:254)
+						    at android.support.v7.widget.Toolbar.<init>(Toolbar.java:196)
+						       at java.lang.reflect.Constructor.constructNative(Native Method)
+						       	  at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+							     at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+							     	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+								   at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+								      at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+								      	 at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+									    at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+									       at android.support.v7.app.AppCompatDelegateImplV7.setContentView(AppCompatDelegateImplV7.java:267)
+									       	  at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:129)
+										     at md58620cbe705876c416ba361abcc6977ae.MainActivity.n_onCreate(Native Method)
+										     	at md58620cbe705876c416ba361abcc6977ae.MainActivity.onCreate(MainActivity.java:28)
+											   at android.app.Activity.performCreate(Activity.java:5231)
+											      at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+											      	 at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)
+												    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)
+												       at android.app.ActivityThread.access$800(ActivityThread.java:135)
+												       	  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)
+													     at android.os.Handler.dispatchMessage(Handler.java:102)
+													     	at android.os.Looper.loop(Looper.java:136)
+														   at android.app.ActivityThread.main(ActivityThread.java:5017)
+														      at java.lang.reflect.Method.invokeNative(Native Method)
+														      	 at java.lang.reflect.Method.invoke(Method.java:515)
+															    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+															       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+															       	  at dalvik.system.NativeStart.main(Native Method)
+
+  --- End of inner exception stack trace ---
+
+  --- End of managed exception stack trace ---
+  java.lang.reflect.InvocationTargetException
+	at java.lang.reflect.Constructor.constructNative(Native Method)
+	   at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	      at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+	      	 at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+		    at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+		       at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+		       	  at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+			     at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+			     	at android.support.v7.app.AppCompatDelegateImplV7.setContentView(AppCompatDelegateImplV7.java:267)
+				   at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:129)
+				      at md58620cbe705876c416ba361abcc6977ae.MainActivity.n_onCreate(Native Method)
+				      	 at md58620cbe705876c416ba361abcc6977ae.MainActivity.onCreate(MainActivity.java:28)
+					    at android.app.Activity.performCreate(Activity.java:5231)
+					       at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+					       	  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)
+						     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)
+						     	at android.app.ActivityThread.access$800(ActivityThread.java:135)
+							   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)
+							      at android.os.Handler.dispatchMessage(Handler.java:102)
+							      	 at android.os.Looper.loop(Looper.java:136)
+								    at android.app.ActivityThread.main(ActivityThread.java:5017)
+								       at java.lang.reflect.Method.invokeNative(Native Method)
+								       	  at java.lang.reflect.Method.invoke(Method.java:515)
+									     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+									     	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+										   at dalvik.system.NativeStart.main(Native Method)
+										   Caused by: java.lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat
+										   	  at android.support.v7.widget.AppCompatDrawableManager$VdcInflateDelegate.createFromXmlInner(AppCompatDrawableManager.java:829)
+											     at android.support.v7.widget.AppCompatDrawableManager.loadDrawableFromDelegates(AppCompatDrawableManager.java:303)
+											     	at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:178)
+												   at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:173)
+												      at android.support.v7.widget.TintTypedArray.getDrawable(TintTypedArray.java:60)
+												      	 at android.support.v7.widget.Toolbar.<init>(Toolbar.java:254)
+													    at android.support.v7.widget.Toolbar.<init>(Toolbar.java:196)
+													       ... 26 more
+													       }
+															LocalizedMessage: "Binary XML file line #1: Error inflating class android.support.v7.widget.Toolbar"
+															 		  Message (System.Exception): "Binary XML file line #1: Error inflating class android.support.v7.widget.Toolbar"
+																	   	  Message (Java.Lang.Throwable): "Binary XML file line #1: Error inflating class android.support.v7.widget.Toolbar"
+																		   	  Source: "mscorlib"
+																			   	  StackTrace (System.Exception): "  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in /Users/builder/data/lanes/2970/46c3f7e0/source/mono/external/referencesource/mscorlib/system/runtime/exceptionservices/exceptionservicescommon.cs:143 \n  at Android.Runtime.JNIEnv.CallNonvirtualVoidMethod (IntPtr jobject, IntPtr jclass, IntPtr jmethod, Android.Runtime.JValue* parms) [0x00084] in /Users/builder/data/lanes/2970/46c3f7e0/source/monodroid/src/Mono.Android/src/Runtime/JNIEnv.g.cs:1029 \n  at Android.App.Activity.SetContentView (Int32 layoutResID) [0x00070] in /Users/builder/data/lanes/2970/46c3f7e0/source/monodroid/src/Mono.Android/platforms/android-23/src/generated/Android.App.Activity.cs:5872 \n  at MissingVectorDrawableCompat.MainActivity.OnCreate (Android.OS.Bundle savedInstanceState) [0x0000e] in /Users/josh/Projects/MissingVectorDrawableCompat/MissingVectorDrawableCompat/MainActivity.cs:20 \n  at Android.Support.V4.App.FragmentActivity.n_OnCreate_Landroid_os_Bundle_ (IntPtr jnienv, IntPtr native__this, IntPtr native_savedInstanceState) [0x00011] in <filename unknown>:0 \n  at (wrapper dynamic-method) System.Object:54f0bf2b-fc66-425b-b7a1-98b65270579e (intptr,intptr,intptr)\n  --- End of managed exception stack trace ---\nandroid.view.InflateException: Binary XML file line #1: Error inflating class android.support.v7.widget.Toolbar\n\tat android.view.LayoutInflater.createView(LayoutInflater.java:620)\n\tat android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)\n\tat android.view.LayoutInflater.rInflate(LayoutInflater.java:755)\n\tat android.view.LayoutInflater.inflate(LayoutInflater.java:492)\n\tat android.view.LayoutInflater.inflate(LayoutInflater.java:397)\n\tat android.view.LayoutInflater.inflate(LayoutInflater.java:353)\n\tat android.support.v7.app.AppCompatDelegateImplV7.setContentView(AppCompatDelegateImplV7.java:267)\n\tat android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:129)\n\tat md58620cbe705876c416ba361abcc6977ae.MainActivity.n_onCreate(Native Method)\n\tat md58620cbe705876c416ba361abcc6977ae.MainActivity.onCreate(MainActivity.java:28)\n\tat android.app.Activity.performCreate(Activity.java:5231)\n\tat android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)\n\tat android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)\n\tat android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)\n\tat android.app.ActivityThread.access$800(ActivityThread.java:135)\n\tat android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)\n\tat android.os.Handler.dispatchMessage(Handler.java:102)\n\tat android.os.Looper.loop(Looper.java:136)\n\tat android.app.ActivityThread.main(ActivityThread.java:5017)\n\tat java.lang.reflect.Method.invokeNative(Native Method)\n\tat java.lang.reflect.Method.invoke(Method.java:515)\n\tat com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)\n\tat dalvik.system.NativeStart.main(Native Method)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat java.lang.reflect.Constructor.constructNative(Native Method)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat android.view.LayoutInflater.createView(LayoutInflater.java:594)\n\t... 23 more\nCaused by: java.lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat\n\tat android.support.v7.widget.AppCompatDrawableManager$VdcInflateDelegate.createFromXmlInner(AppCompatDrawableManager.java:829)\n\tat android.support.v7.widget.AppCompatDrawableManager.loadDrawableFromDelegates(AppCompatDrawableManager.java:303)\n\tat android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:178)\n\tat android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:173)\n\tat android.support.v7.widget.TintTypedArray.getDrawable(TintTypedArray.java:60)\n\tat android.support.v7.widget.Toolbar.<init>(Toolbar.java:254)\n\tat android.support.v7.widget.Toolbar.<init>(Toolbar.java:196)\n\t... 26 more\n"
+																				   	     StackTrace (Java.Lang.Throwable): "  at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () [0x0000c] in /Users/builder/data/lanes/2970/46c3f7e0/source/mono/external/referencesource/mscorlib/system/runtime/exceptionservices/exceptionservicescommon.cs:143 \n  at Android.Runtime.JNIEnv.CallNonvirtualVoidMethod (IntPtr jobject, IntPtr jclass, IntPtr jmethod, Android.Runtime.JValue* parms) [0x00084] in /Users/builder/data/lanes/2970/46c3f7e0/source/monodroid/src/Mono.Android/src/Runtime/JNIEnv.g.cs:1029 \n  at Android.App.Activity.SetContentView (Int32 layoutResID) [0x00070] in /Users/builder/data/lanes/2970/46c3f7e0/source/monodroid/src/Mono.Android/platforms/android-23/src/generated/Android.App.Activity.cs:5872 \n  at MissingVectorDrawableCompat.MainActivity.OnCreate (Android.OS.Bundle savedInstanceState) [0x0000e] in /Users/josh/Projects/MissingVectorDrawableCompat/MissingVectorDrawableCompat/MainActivity.cs:20 \n  at Android.Support.V4.App.FragmentActivity.n_OnCreate_Landroid_os_Bundle_ (IntPtr jnienv, IntPtr native__this, IntPtr native_savedInstanceState) [0x00011] in <filename unknown>:0 \n  at (wrapper dynamic-method) System.Object:54f0bf2b-fc66-425b-b7a1-98b65270579e (intptr,intptr,intptr)\n  --- End of managed exception stack trace ---\nandroid.view.InflateException: Binary XML file line #1: Error inflating class android.support.v7.widget.Toolbar\n\tat android.view.LayoutInflater.createView(LayoutInflater.java:620)\n\tat android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)\n\tat android.view.LayoutInflater.rInflate(LayoutInflater.java:755)\n\tat android.view.LayoutInflater.inflate(LayoutInflater.java:492)\n\tat android.view.LayoutInflater.inflate(LayoutInflater.java:397)\n\tat android.view.LayoutInflater.inflate(LayoutInflater.java:353)\n\tat android.support.v7.app.AppCompatDelegateImplV7.setContentView(AppCompatDelegateImplV7.java:267)\n\tat android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:129)\n\tat md58620cbe705876c416ba361abcc6977ae.MainActivity.n_onCreate(Native Method)\n\tat md58620cbe705876c416ba361abcc6977ae.MainActivity.onCreate(MainActivity.java:28)\n\tat android.app.Activity.performCreate(Activity.java:5231)\n\tat android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)\n\tat android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2159)\n\tat android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2245)\n\tat android.app.ActivityThread.access$800(ActivityThread.java:135)\n\tat android.app.ActivityThread$H.handleMessage(ActivityThread.java:1196)\n\tat android.os.Handler.dispatchMessage(Handler.java:102)\n\tat android.os.Looper.loop(Looper.java:136)\n\tat android.app.ActivityThread.main(ActivityThread.java:5017)\n\tat java.lang.reflect.Method.invokeNative(Native Method)\n\tat java.lang.reflect.Method.invoke(Method.java:515)\n\tat com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)\n\tat dalvik.system.NativeStart.main(Native Method)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat java.lang.reflect.Constructor.constructNative(Native Method)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat android.view.LayoutInflater.createView(LayoutInflater.java:594)\n\t... 23 more\nCaused by: java.lang.NoClassDefFoundError: android.support.graphics.drawable.VectorDrawableCompat\n\tat android.support.v7.widget.AppCompatDrawableManager$VdcInflateDelegate.createFromXmlInner(AppCompatDrawableManager.java:829)\n\tat android.support.v7.widget.AppCompatDrawableManager.loadDrawableFromDelegates(AppCompatDrawableManager.java:303)\n\tat android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:178)\n\tat android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:173)\n\tat android.support.v7.widget.TintTypedArray.getDrawable(TintTypedArray.java:60)\n\tat android.support.v7.widget.Toolbar.<init>(Toolbar.java:254)\n\tat android.support.v7.widget.Toolbar.<init>(Toolbar.java:196)\n\t... 26 more\n"
+																					      		TargetSite: {Void Throw()}
+
+>
